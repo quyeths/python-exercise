@@ -34,7 +34,7 @@ def solution(i, n, m, customerInfo, hashmap):
         else:
             res.append("No")
     else:
-        if n:
+        if n > 0:
             n -= 1
             res.append("Yes")
             hashmap.append(customerInfo[i])
