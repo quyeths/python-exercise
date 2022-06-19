@@ -26,7 +26,7 @@ def solution(i, n, m, customerInfo, hashmap):
             hashmap.remove(checkNM[start])
 
     if customerInfo[i][2] == 1:
-        if n - 1 > -1 and m - 1 > -1:
+        if n and m - 1 > -1:
             n -= 1
             m -= 1
             res.append("Yes")
@@ -34,7 +34,7 @@ def solution(i, n, m, customerInfo, hashmap):
         else:
             res.append("No")
     else:
-        if n - 1 > -1 and m > -1:
+        if n:
             n -= 1
             res.append("Yes")
             hashmap.append(customerInfo[i])
